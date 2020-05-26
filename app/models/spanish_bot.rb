@@ -2,7 +2,7 @@ require "google/cloud/translate"
 class SpanishBot
 
 
-#export GOOGLE_APPLICATION_CREDENTIALS=/Users/nicolebeguesse/Desktop/labels/config/googleauth/translation-api--1590372040635-03e3b9e2dcf4.json
+#export GOOGLE_APPLICATION_CREDENTIALS=/Users/nicolebeguesse/Desktop/palabras/translation-api--1590372040635-03e3b9e2dcf4.json
 
 
   def self.say str
@@ -23,16 +23,22 @@ class SpanishBot
 
   end
 
-  def self.translate str
-    client = Google::Cloud::Translate.new version: :v2, project_id: "translation-api--1590372040635"
-    translation = client.translate str, to: 'en', from: 'es'
+  def self.translate str, retries = 0
+    begin
+      client = Google::Cloud::Translate.new version: :v2, project_id: "translation-api--1590372040635"
+      translation = client.translate str, to: 'en', from: 'es'
     return translation.text
+    rescue RuntimeError => e
+      if ENV['GOOGLE_APPLICATION_JSON'].present? && ENV['GOOGLE_APPLICATION_CREDENTIALS'].present?
+        File.open(ENV['GOOGLE_APPLICATION_CREDENTIALS'], 'w') {|f| f.write(ENV['GOOGLE_APPLICATION_JSON']) }
+        client = Google::Cloud::Translate.new version: :v2, project_id: "translation-api--1590372040635"
+        translation = client.translate str, to: 'en', from: 'es'   
+        return translation.text     
+      else
+        raise StandardError, "Could not get Google auth credentials"
+      end
+    end
   end
 
-  def self.test
-    client = Google::Cloud::Translate.new version: :v2, project_id: "translation-api--1590372040635"
-    translation = client.translate "Hola", to: 'en', from: 'es'
-    return translation.text
-  end
 
 end
