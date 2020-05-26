@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
    root 'translations#new', :via=>[:get, :post]
    get "translations/auth" => "translations#auth", :as=>:auth#, :via=>[:get, :post]
-
+   get "translations/say" => "translations#say", :as=>:say
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

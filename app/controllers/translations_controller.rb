@@ -11,4 +11,9 @@ class TranslationsController < ApplicationController
     end
   end
 
+  def say
+    data = SpanishBot.say(params[:text])
+    send_data data, type: 'audio/mpeg', disposition: 'inline'
+  end
+
 end
