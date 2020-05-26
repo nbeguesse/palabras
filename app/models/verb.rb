@@ -11,11 +11,11 @@ class Verb < ActiveRecord::Base
   enum mood: [:no_mood, :indicative, :subjunctive, :imperative]
 
   def self.matches_for word
+    return [] if word == "para"
     matches = Verb.where(:word=>word)
     return matches if matches.any?
     return [] if word == "se" #i.e. not "sé"
     return [] if word == "de" #i.e. not "dé"
-    return [] if word == "para"
     matches = Verb.where(:word_no_accents=>Verb.remove_accents(word))
     return matches if matches.any?
     #e.g. "eschuchame"
