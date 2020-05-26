@@ -99,7 +99,7 @@ protected
       parts = word.split(",") 
       self.word = parts.pop
       parts.each do |part|
-        Verb.create(:infinitive_id=>self.infinitive_id, :word=>part, :pronoun=>pronoun, :mood=>mood, :tense=>tense)
+        Verb.create(:infinitive_id=>self.infinitive_id, :word=>part, :pronoun=>pronoun, :mood=>mood, :tense=>tense, :is_infinitive=>is_infinitive, :is_participle=>is_participle)
       end
     end
   end
