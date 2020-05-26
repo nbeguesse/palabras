@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  word: MyString
+  infinitive_id: 1
+  pronoun: 1
+  mood: 1
+  tense: 1
+
+two:
+  word: MyString
+  infinitive_id: 1
+  pronoun: 1
+  mood: 1
+  tense: 1
