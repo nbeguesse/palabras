@@ -10,6 +10,13 @@ class Verb < ActiveRecord::Base
   enum tense: [:no_tense, :past, :present, :future, :imperfect, :conditional, :preterite, :imperfect2, :affirmative, :negative]
   enum mood: [:no_mood, :indicative, :subjunctive, :imperative]
 
+  def same_as? other
+    [:infinitive_id, :tense, :mood, :is_participle, :is_infinitive, :word].each do |attr|
+      return false if self.send(attr) != other.send(attr)
+    end
+    true
+  end
+
   def self.matches_for word
     return [] if word == "para"
     matches = Verb.where(:word=>word)
@@ -19,7 +26,7 @@ class Verb < ActiveRecord::Base
     matches = Verb.where(:word_no_accents=>Verb.remove_accents(word))
     return matches if matches.any?
     #e.g. "eschuchame"
-    ["me","la","le","te","nos","os","les"].each do |indirect_object|
+    ["me","la","le","te","nos","os","les","lo"].each do |indirect_object|
       if word.end_with?(indirect_object)
         word =  word[0,word.length-indirect_object.length] 
         return Verb.where(:word_no_accents=>Verb.remove_accents(word))

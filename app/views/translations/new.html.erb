@@ -131,8 +131,11 @@
             </td>
             <%end%>
             <td>
+              <%previous_v = nil%>
               <%matches2.each do |v|%>
                 <%next if v.negative? && previous_word != "no"%>
+                <%next if v.affirmative? && previous_word == "no"%>
+                <%next if previous_v && v.same_as?(previous_v)%>
                 <%if v.is_infinitive?%>
                   <button type="button" class="btn btn-warning">Infinitive</button><!-- i.e. yellow -->
                 <%elsif v.is_participle?%>
@@ -161,6 +164,7 @@
                 <%elsif v.imperfect? || v.preterite? %>
                  <button type="button" class="btn btn-outline-info">Past <%=v.tense%></button>
                 <%end%><br/>
+                <%previous_v = v%>
               <%end%>
             </td>
             <td><h3 class="display-4"><%=matches.first.word%></h3></td>
