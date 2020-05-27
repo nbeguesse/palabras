@@ -22,7 +22,7 @@ class Verb < ActiveRecord::Base
       self.mood = Verb.moods[:continuous]
       return self
     elsif infinitive.name == "haber" 
-      if self.imperfect?
+      if self.imperfect? #i.e. perfect + imperfect = pluperfect!
         self.tense = Verb.tenses[:pluperfect] 
       elsif self.preterite?
         self.tense = Verb.tenses[:anterior] #rare!
@@ -42,14 +42,17 @@ class Verb < ActiveRecord::Base
 
   def self.matches_for word
     return [] if word == "para"
+    #i.e. first search for an exact match
     matches = Verb.where(:word=>word)
     return matches if matches.any?
-    return [] if word == "se" #i.e. not "sé"
-    return [] if word == "de" #i.e. not "dé"
-    return [] if word == "este" #i.e. no "esté"
+    if ["se","de","este","cómo"].include?(word)
+      #i.e. the accent must match exactly with these words
+      return []
+    end
+    #i.e. do a broader search without accents
     matches = Verb.where(:word_no_accents=>Verb.remove_accents(word))
     return matches if matches.any?
-    #e.g. "eschuchame"
+    #i.e. search for word combos e.g. "eschuchame"
     ["me","la","le","te","nos","os","les","lo"].each do |indirect_object|
       if word.end_with?(indirect_object)
         word =  word[0,word.length-indirect_object.length] 
@@ -96,6 +99,8 @@ class Verb < ActiveRecord::Base
         next
       end
       possible_tenses = nil
+      #i.e. look at only these three moods. Other moods (like Continuous etc) are created dynamically
+      #  by looking at the auxiliary verbs
       ["Indicative","Subjunctive","Imperative"].each do |mood|
         table_text = table.parent().parent().text() #e.g. "IndicativeIrregularities are in redPresentPreteriteImperfectConditionalFutureyovengovineveníavendríavendré ...
         if table_text.start_with?(mood)
@@ -128,8 +133,9 @@ protected
     if imperative? && affirmative?
       self.previous_word_is_not = "no"
     end
-    #i.e. previous word is "no" in imperative negative form and
-    #  previous word can also be a reflexive indirect object
+    #i.e. two use cases:
+    #  (1) Verb is an imperative negative and previous word is "no"
+    #  (2) Verb is reflexive and previous word is indirect object
     if word.include?(" ")
       parts = word.split(" ")
       self.word = parts.pop

@@ -166,7 +166,9 @@
                     <button type="button" class="btn btn-outline-info">Past</button>
                   <%end%>
                   <%if v.tense%>
-                    <button type="button" class="btn btn-info <%=v.tense%>"><%=v.tense%></button>
+                    <%if !v.affirmative?%>
+                      <button type="button" class="btn btn-info <%=v.tense%>"><%=v.tense%></button>
+                    <%end%>
                   <%end%>
                   <!-- Perfect block -->
                   <%if v.perfect%>
@@ -219,7 +221,7 @@
 <div class="card border-primary mb-3" style="max-width: 40%;">
   <div class="card-header">Links</div>
   <div class="card-body">
-    <h4 class="card-title"><%=link_to "English to Spanish...","https://www.google.com/search?q=english+to+spanish"%></h4>
+    <h4 class="card-title"><%=link_to "English to Spanish...","https://www.google.com/search?q=english+to+spanish", :target=>"englishtospanish"%></h4>
     <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
   </div>
 </div>
