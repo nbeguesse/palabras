@@ -5,10 +5,33 @@ class Verb < ActiveRecord::Base
   validates_presence_of :word
   before_save :remove_accents
   before_save :split_comma
+  before_save :set_previous_word
+  attr_accessor :perfect
 
   enum pronoun: [:no_pronoun, :yo, :tu, :el, :nosotros, :vosotros, :ellos]
-  enum tense: [:no_tense, :past, :present, :future, :imperfect, :conditional, :preterite, :imperfect2, :affirmative, :negative]
-  enum mood: [:no_mood, :indicative, :subjunctive, :imperative]
+  enum tense: [:no_tense, :past, :present, :future, :imperfect, :conditional, :preterite, :pluperfect, :affirmative, :negative, :anterior]
+  enum mood: [:no_mood, :indicative, :subjunctive, :imperative, :continuous]
+
+  scope :auxable, ->{where("mood <> ?",Verb.moods[:imperative])}
+
+  def make_perfect participle
+    return nil unless participle.is_participle
+    self.word = word+" "+participle.word
+    errors.add(:base,"Do Not Save Temporary modification")
+    if infinitive.name == "estar"
+      self.mood = Verb.moods[:continuous]
+      return self
+    elsif infinitive.name == "haber" 
+      if self.imperfect?
+        self.tense = Verb.tenses[:pluperfect] 
+      elsif self.preterite?
+        self.tense = Verb.tenses[:anterior] #rare!
+      end 
+      self.perfect = true
+      return self
+    end
+    nil
+  end
 
   def same_as? other
     [:infinitive_id, :tense, :mood, :is_participle, :is_infinitive, :word].each do |attr|
@@ -23,6 +46,7 @@ class Verb < ActiveRecord::Base
     return matches if matches.any?
     return [] if word == "se" #i.e. not "sé"
     return [] if word == "de" #i.e. not "dé"
+    return [] if word == "este" #i.e. no "esté"
     matches = Verb.where(:word_no_accents=>Verb.remove_accents(word))
     return matches if matches.any?
     #e.g. "eschuchame"
@@ -83,11 +107,7 @@ class Verb < ActiveRecord::Base
               for j in 1...row.css("td").length
                 td = row.css("td")[j]
                 tense = possible_tenses[j] #e.g. "Future"
-                #td.text().split(",").each do |part| #e.g. see "ha,hay"
-                  #part = td.text()
-                  #part.gsub!("no ","") #i.e. remove "no " from negative imperative
-                  inf.verbs.create(:word=>td.text(), :pronoun=>i, :mood=>Verb.moods[mood.downcase], :tense=>Verb.tenses[tense.downcase.gsub(" 2","2")])
-                #end
+                inf.verbs.create(:word=>td.text(), :pronoun=>i, :mood=>Verb.moods[mood.downcase], :tense=>Verb.tenses[tense.downcase.gsub(" 2","")])
               end
             end
           end
@@ -101,6 +121,29 @@ class Verb < ActiveRecord::Base
 
 protected
 
+  def set_previous_word
+    if word == "-"
+      errors.add(:word, "is not valid")
+    end
+    if imperative? && affirmative?
+      self.previous_word_is_not = "no"
+    end
+    #i.e. previous word is "no" in imperative negative form and
+    #  previous word can also be a reflexive indirect object
+    if word.include?(" ")
+      parts = word.split(" ")
+      self.word = parts.pop
+      self.previous_word_is = parts.pop
+      #i.e. there might be three parts; see "arrebatamos"
+    end
+    if word == "debe"
+      self.previous_word_is_not = "el"
+    end
+    if word == "cena"
+      self.previous_word_is_not = "la"
+    end
+  end
+
   def split_comma
     if word.include?(",") #e.g. see "ha,hay"
       parts = word.split(",") 
@@ -112,7 +155,6 @@ protected
   end
 
   def remove_accents
-    self.word = word.downcase.gsub("no ","")  #i.e. remove "no " from negative imperative
     self.word_no_accents = Verb.remove_accents(word)
   end
 

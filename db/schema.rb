@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200525134901) do
+ActiveRecord::Schema.define(version: 20200527061028) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,11 +32,13 @@ ActiveRecord::Schema.define(version: 20200525134901) do
     t.integer  "pronoun"
     t.integer  "mood"
     t.integer  "tense"
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
-    t.boolean  "is_infinitive",   default: false
-    t.boolean  "is_participle",   default: false
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
+    t.boolean  "is_infinitive",        default: false
+    t.boolean  "is_participle",        default: false
     t.string   "word_no_accents"
+    t.string   "previous_word_is"
+    t.string   "previous_word_is_not"
   end
 
   add_index "verbs", ["word"], name: "index_verbs_on_word", using: :btree
