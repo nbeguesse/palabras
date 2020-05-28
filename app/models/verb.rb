@@ -5,7 +5,6 @@ class Verb < ActiveRecord::Base
   validates_presence_of :word
   before_save :split_comma
   before_save :set_previous_word
-  before_save :remove_accents
   attr_accessor :perfect
 
   enum pronoun: [:no_pronoun, :yo, :tu, :el, :nosotros, :vosotros, :ellos]
@@ -148,6 +147,7 @@ protected
     if word == "cena"
       self.previous_word_is_not = "la"
     end
+    self.word_no_accents = Verb.remove_accents(word)
   end
 
   def split_comma
@@ -160,8 +160,5 @@ protected
     end
   end
 
-  def remove_accents
-    self.word_no_accents = Verb.remove_accents(word)
-  end
 
 end
