@@ -53,7 +53,7 @@ class Verb < ActiveRecord::Base
     matches = Verb.where(:word_no_accents=>Verb.remove_accents(word))
     return matches if matches.any?
     #i.e. search for word combos e.g. "eschuchame"
-    ["me","la","le","te","nos","os","les","lo"].each do |indirect_object|
+    ["me","la","le","te","nos","os","les","lo","se"].each do |indirect_object|
       if word.end_with?(indirect_object)
         word =  word[0,word.length-indirect_object.length] 
         return Verb.where(:word_no_accents=>Verb.remove_accents(word))

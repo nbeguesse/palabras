@@ -1,201 +1,500 @@
-Abanderar,To register
-Abrir,To open
-Aburrir,To bore
-Acabar,To finish
-Aceptar,To accept
-Acordar,To do something
-Acostar,To go to bed
-Almorzar,To have lunch
-Amar,To love
-Andar,To walk
-Apagar,To put out / extinguish
-Aprender,To learn
-Asistir,To assist – attend
-Ayudar,To help
-Bailar,To dance
-Bajar,To go down – get off (bus)
-Beber,To drink
-Buscar,To look for
-Caber,To fit
-Caer,To fall
-Cambiar,To change
-Cantar,To sing
-Casar,To marry / get married
-Cenar,To have dinner
-Cerrar,To close
-Cocinar,To cook
-Coger,To pick up / take / catch
-Comenzar,To star / begin
-Comer,To eat
-Compartir,To share
-Comprar,To buy
-Comprender,To understand
-Conducir,To driver
-Conocer,To know
-Conseguir,To get
-Construir,To build
-Contar,To count / tell
-Corregir,To correct
-Correr,To run
-Cortar,To cute
-Costar,To cost
-Crear,To create
-Crecer,To grow
-Creer,To think
-Cruzar,To cross
-Cubrir,To cover
-Dar,To give
-Deber,To must
-Decidir,To decide
-Decir,To say / tell
-Defender,To defend / stand up for
-Dejar,To leave
-Desayunar,To have breakfast
-Descubrir,To discover
-Desear,To wish
-Despedir,To say goodbye
-Despertar,To wake up
-Destruir,To destroy / wreck / demolish
-Devolver,To return
-Dirigir,To manage
-Divertir,To entertain / have fun
-Doler,to hurt
-Dormir,To sleep
-Duchar,To take a shower
-Echar,To throw
-Elegir,To choose
-Empezar,To begin
-Encantar,To love something
-Encender,To light / turn on
-Encontrar,To find
-Entender,To understand
-Entrar,To go in
-Enviar,To send
-Escoger,To choose
-Escribir,To writte
-Escuchar,To listen
-Esperar,To wait
-Estar,To be
-Estudiar,To study
-Exigir,To demand / require
-Explicar,To explain
-Ganar,To win
-Gastar,To spend
-Gustar,To like
-Haber,To have
-Habilitar,To fit out / authorise
-Habitar,To inhabit
-Habituar,To get used to
-Hablar,To speak
-Hacer,To make, to do
-Halagar,To flatter
-Hartar,To get bored of
-Helar,To freeze
-Henchir,To fill
-Herir,To hurt
-Hervir,To boil
-Hinchar,To swell
-Hospedar,To provide accomodation
-Hostigar,To bother, pester
-Huir,To run away, to escape
-Incluir,To include
-Ir,To go
-Jugar,To play
-Lavar,To wash
-Leer,To read
-Levantar,To raise
-Limpiar,To clean
-Llamar,To call
-Llenar,To fill
-Llegar,To arrive
-Llevar,To carry, wear
-Llorar,To cry
-Llover,To rain
-Mandar,To order
-Manejar,To handle, use, manage.
-Mantener,To maintain
-Medir,To measure
-Mentir,To lie
-Mirar,To look at, wash
-Morir,To die
-Mostrar,To show
-Mover,To move
-Nace,To beborn
-Nadar,To swim
-Necesitar,To need
-Obtener,To obtain, win, get.
-Ofrecer,To offer
-Oír,To hear
-Oler,To smell
-Olvidar,To forget
-Organizar,To organize
-Pagar,To pay
-Parar,To stop
-Parecer,To look like, seem
-Pasar,To pass
-Pedir,To ask, ask for
-Pensar,To think
-Perder,To lose
-Permitir,To allow
-Poder,Be able to
-Poner,To put
-Practicar,To practise
-Preferir,To prefer
-Preguntar,To ask
-Preparar,To prepare
-Prestar,To lend
-Probar,To taste, try, try on
-Proteger,To protect
-Quedar,To stay
-Quejar,To complain
-Querer,To want
-Quitar,To take off
-Recibir,To receive
-Recoger,To pick up
-Recomendar,To recommend
-Recordar,To remember
-Regresar,To go back, come back
-Reír,To laugh
-Repetir,To repeat
-Resolver,to resolve
-Rogar,To beg
-Romper,To break
-Rezar,To pray
-Remar,To row
-Saber,To know
-Sacar,To take out
-Salir,To go out
-Secar,To dry
-Seguir,To follow
-Sentar,To sit, seat
-Sentir,To feel
-Ser,To be
-Servir,To serve
-Sofreír,To saute, fry.
-Soler,To ussually do something
-Sonar,To sound
-Sonreír,To smile
-Subir,To go up, com up
-Sugerir,To suggest
-Sumergir,To inmerse, submerge, dip.
-Tener,To have
-Terminar,To finish
-Tocar,To touch
-Tomar,To take
-Trabajar,To work
-Traducir,To translate
-Traer,To bring
-Tratar,To treat /try
-Usar,To use
-Valer,To be worth
-Velar,To guard
-Vender,To sale
-Venir,To come
-Ver,To see
-Vestir,To wear, dress
-Viajar,To travel
-Visitar,To visit
-Vivir,To live
-Volar,To fly
-Volver,To return
-Violar,To violate
+abatir,to knock down, to overthrow, to throw down
+abrasar,to burn, to set on fire
+abrazar,to embrace, to hug; to clamp
+abrir,to open
+absolver,to absolve, to acquit
+abstenerse,to abstain
+aburrir,to annoy, to bore, to vex
+aburrirse,to be bored, to grow tired, to grow weary
+acabar,to finish, to end, to complete
+acelerar,to accelerate, to speed, to hasten, to hurry
+aceptar,to accept
+acercar,to bring near, to place near
+acercarse,to approach, to draw near
+acertar,to hit the mark, to hit upon, to do (something) right, to succeed in, to guess right
+aclamar,to acclaim, to applaud, to shout, to hail
+aclarar,to explain, to clarify, to make clear, to rinse, to clear
+acompañar,to accompany, to escort, to go with, to keep company
+aconsejar,to advise, to counsel
+acordar,to agree (upon)
+acordarse,to remember
+acostarse,to go to bed, to lie down
+acostumbrar,to be accustomed
+acuchillar,to knife, to cut, to flash, to cut open
+acudir,to attend, to be present frequently, to respond (to a call), to come to the rescue
+acusar,to accuse
+adelantar,to advance, to keep on, to progress, to go ahead
+adelantarse,to go forward, to go ahead, to move ahead, to take the lead
+adivinar,to divine, to foretell, to guess
+admirar,to admire
+admitir,to admit, to grant, to permit
+adoptar,to adopt
+adorar,to adore, to worship
+adquirir,to acquire, to get, to obtain
+advertir,to advise, to give notice, to give warning, to take notice of, to warn
+afeitarse,to shave oneself
+agarrar,to grasp, to obtain, to seize, to catch, to clutch, to come upon
+agitar,to agitate, to wave, to shake up, to stir
+agotar,to exhaust, to use up
+agradar,to please, to be pleasing
+agradecer,to thank, to be thankful for
+agrandar,to enlarge, to grow larger, to increase
+agravar,to aggravate, to make worse
+agregar,to add, to collect, to gather, to aggregate, to collate
+agrupar,to group
+aguardar,to expect, to wait for
+ahorrar,to economize, to save
+alcanzar,to reach, to overtake
+alegrarse,to be glad, to rejoice
+almorzar,to lunch, to have lunch
+alquilar,to hire, to rent
+alumbrar,to illuminate, to light, to enlighten
+alumbrarse,to be (get) high, to get tipsy, to become lively (from liquor)
+alzar,to heave, to lift, to pick up, to raise (prices)
+amar,to love
+añadir,to add
+andar,to walk
+anunciar,to announce, to foretell, to proclaim
+apagar,to put out (flame, fire), to extinguish, to turn off (flame, fire, light)
+aparecer,to appear, to show up
+aplaudir,to applaud
+apoderarse,to take power, to take possession
+apreciar,to appreciate, to appraise, to esteem
+aprender,to learn
+apresurarse,to hasten, to hurry, to rush
+aprobar,to approve, to pass a test
+aprovecharse,to take advantage, to avail oneself
+apurarse,to fret, to grieve, to worry
+arrancar,to root up (out), to pull up (out), to tear off (away), to snatch
+arreglar,to fix, to arrange, to adjust, to regulate, to settle, to repair
+arrojar,to fling, to hurl, to throw
+articular,to articulate, to pronounce distinctly
+asegurar,to assure, to affirm, to assert, to insure
+asir,to seize, to grasp
+asistir,to attend, to assist, to be present
+asustarse,to be frightened, to be scared
+atacar,to attack
+atenerse,to rely on, to depend on
+atraer,to attract, to allure, to charm
+atravesar,to cross, to go through, to run through
+atreverse,to dare, to venture
+avanzar,to advance
+averiguar,to find out, to inquire, to investigate
+ayudar,to help, to aid, to assist
+bailar,to dance
+bajar,to lower, to let down, to come down, to go down, to descend
+balbucear,to stammer, to hesitate in speech
+bañarse,to bathe oneself, to take a bath
+barrer,to sweep, to whisk
+bastar,to be enough, to be sufficient, to suffice
+bautizar,to baptize, to christen
+beber,to drink
+bendecir,to bless, to consecrate
+borrar,to erase, to cross out
+bostezar,to yawn, to gape
+botar,to fling, to cast (away), to throw (away), to launch
+broncear,to bronze, to tan
+bullir,to boil, to bustle, to hustle, to stir
+burlarse,to make fun of, to poke fun at, to ridicule
+buscar,to look for, to seek
+caber,to be contained, to fit into
+caer,to fall
+caerse,to fall, to fall down, to tumble
+calentar,to heat (up), to warm (up)
+callarse,to be silent, to keep quiet
+calzar,to shoe, to wear (shoes), to put on (shoes)
+cambiar,to change
+caminar,to walk, to move along
+cansarse,to become tired, to become weary, to get tired
+cantar,to sing
+caracterizar,to characterize
+cargar,to load, to burden
+casarse,to get married, to marry
+celebrar,to celebrate
+cenar,to have supper, to eat supper
+cepillar,to brush
+cerrar,to close
+certificar,to certify, to register (a letter), to attest
+charlar,to chat, to prattle
+chistar,to mumble, to mutter
+chupar,to suck
+cocinar,to cook
+coger,to seize, to take, to grasp, to grab, to catch
+colegir,to collect
+colgar,to hang (up)
+colocar,to put, to place
+comenzar,to begin, to commence, to start
+comer,to eat
+componer,to compose
+comprar,to buy, to purchase
+comprender,to understand
+conducir,to lead, to conduct, to drive
+confesar,to confess
+conocer,to know, to be acquainted with
+conseguir,to attain, to get, to obtain
+constituir,to constitute, to make up
+construir,to construct, to build
+contar,to count, to relate, to tell
+contener,to contain, to hold
+contestar,to answer, to reply
+continuar,to continue
+contribuir,to contribute
+convencer,to convince
+convenir,to agree, to convene
+convertir,to convert
+convocar,to call together, to convene, to convoke, to summon
+corregir,to correct
+correr,to run, to race, to flow
+cortar,to cut, to cut off, to cut out
+costar,to cost
+crecer,to grow
+creer,to believe
+criar,to breed, to raise, to bring up (rear)
+cruzar,to cross
+cubrir,to cover
+cuidarse,to take care of oneself
+cumplir,to fulfill, to keep (a promise), to reach one's birthday (use with años)
+dar,to give
+deber,to owe, must, ought
+decidir,to decide
+decir,to say, to tell
+declarar,to declare
+dedicarse,to devote oneself
+defender,to defend
+dejar,to let, to permit, to allow, to leave
+delinquir,to be delinquent, to violate the law
+demostrar,to demonstrate, to prove
+denunciar,to denounce
+depender,to depend
+derribar,to knock down, to overthrow, to tear down, to throw down
+desayunarse,to breakfast, to have breakfast
+descansar,to rest
+describir,to describe, to delineate
+descubrir,to discover
+desear,to desire, to wish, to want
+desempeñar,to play (a part), to act (a part), to discharge, to perform (a duty), to take out of pawn
+deshacer,to undo, to destroy, to take apart
+despedirse,to take leave of, to say good-bye to
+despegar,to detach, to unglue, to unstuck, to take off (airplane)
+desperezarse,to stretch oneself, to stretch one's arms and legs
+despertarse,to wake up oneself
+destruir,to destroy
+desvestirse,to undress oneself, to get undressed
+detener,to stop (someone or something), to detain
+detenerse,to stop (oneself)
+devolver,to return (an object), to refund, to give back
+dibujar,to design, to draw, to sketch
+dirigir,to direct
+disculparse,to apologize, to excuse (oneself)
+discutir,to discuss
+dispensar,to excuse, to dispense, to distribute, to exempt
+distinguir,to distinguish
+divertirse,to have a good time, to enjoy oneself
+divorciarse,to be (get) divorced
+doler,to ache, to pain, to hurt, to cause grief, to cause regret
+dormir,to sleep
+ducharse,to take a shower, to shower oneself
+dudar,to doubt
+echar,to cast, to fling, to hurt, to pitch, to throw
+ejecutar,to execute, to carry out, to perform
+ejercer,to exercise, to practice (a professional)
+elegir,to elect, to select, to choose
+embeber,to soak in, to soak up, to suck in, to imbibe
+empezar,to begin, to start
+emplear,to employ, to use
+encender,to incite, to inflame, to kindle, to light
+encerrar,to enclose, to lock up, to confine
+encontrar,to meet, to encounter, to find
+enfadarse,to become angry
+enfermarse,to get sick, to fall sick, to become sick, to fall ill, to become ill
+enojarse,to become angry, to get angry, to get cross
+enseñar,to teach, to show, to point out
+entender,to understand
+entrar,to enter, to go (in), to come (in)
+entregar,to deliver, to hand over, to give
+enunciar,to enunciate, to state
+enviar,to send
+envolver,to wrap up
+equivocarse,to be mistaken
+erguir,to raise, to stand up straight
+errar,to err, to wander, to roam, to miss
+escoger,to choose, to select
+escribir,to write
+escuchar,to listen (to)
+esparcir,to scatter, to spread
+esperar,to expect, to hope, to wait (for)
+esquiar,to ski
+establecer,to establish
+estar,to be
+estimar,to estimate, to esteem, to respect, to value
+estudiar,to study
+exigir,to demand, to urge, to require
+explicar,to explain
+expresar,to express
+fabricar,to fabricate, to manufacture
+faltar,to be lacking, to be wanting, to lack, to miss, to need
+felicitar,to congratulate, to felicitate
+festejar,to feast, to entertain, to celebrate
+fiar,to confide, to trust
+fijarse,to take notice, to pay attention, to settle
+fingir,to feign, to pretend
+firmar,to sign
+formar,to form, to shape
+fregar,to wash dishes, to scrub
+freír,to fry
+fumar,to smoke
+funcionar,to function, to run (machine)
+ganar,to earn, to gain, to win
+gastar,to spend (money), to wear out, to waste
+gemir,to grieve, to groan, to moan
+gobernar,to govern, to rule
+gozar,to enjoy
+gritar,to shout, to scream, to shriek, to cry out
+gruñir,to grumble, to grunt, to growl, to creak
+guiar,to lead, to guide
+gustar,to be pleasing (to), to like
+haber,to have (as an auxiliary, helping verb to form the compound tenses)
+habitar,to inhabit, to dwell, to live, to reside
+hablar,to talk, to speak
+hacer,to do, to make
+hallar,to find, to discover, to locate
+helar,to freeze
+heredar,to inherit
+herir,to harm, to hurt, to wound
+huir,to escape, to flee, to run away, to slip away
+ignorar,to be ignorant of, not to know
+impedir,to hinder, to impede, to prevent
+importar,to matter, to be important
+imprimir,to imprint, to impress, to print, to fix in the mind
+incluir,to include, to enclose
+indicar,to indicate, to point out
+inducir,to induce, to influence, to persuade
+influir,to influence
+informarse,to inform oneself, to find out
+inscribir,to inscribe, to record, to register
+inscribirse,to enroll, to register
+insistir,to insist, to persist
+interesarse,to be interested in
+introducir,to introduce
+invitar,to invite
+ir,to go
+irse,to go away
+jugar,to play (a game, sport)
+juntar,to join, to unite, to connect
+jurar,to swear, to take an oath
+juzgar,to judge
+lanzar,to throw, to hurl, to fling, to launch
+lastimarse,to hurt oneself, to feel sorry for, to complain, to regret
+lavar,to wash
+lavarse,to wash oneself
+leer,to read
+levantar,to lift, to raise
+levantarse,to get up, to rise
+limpiar,to clean
+limpiarse,to clean oneself
+llamar,to call, to name
+llamarse,to call oneself, to be named
+llegar,to arrive
+llenar,to fill
+llevar,to carry (away), to take (away), to wear
+llorar,to weep, to cry, to whine
+llover,to rain
+luchar,to fight, to strive, to struggle, to wrestle
+maldecir,to curse
+manejar,to manage, to handle, to drive, to operate (a vehicle)
+mantener,to maintain, to keep up, to support, to provide for
+marcar,to mark, to note, to observe
+marchar,to walk, to march, to function (machine), to run (machine)
+marcharse,to go away, to leave
+matar,to kill
+medir,to measure, to weigh, to scan (verses)
+mejorar,to improve
+mencionar,to mention
+mentir,to lie, to tell a lie
+merecer,to merit, to deserve
+mirar,to look, to look at, to watch
+mirarse,to look at oneself, to look at each other (uno a otro, unos a otros)
+mojarse,to get wet, to wet oneself
+montar,to mount, to go up, to climb, to get on, to wind (a watch)
+morder,to bite
+morir,to die
+mostrar,to show, to point out
+mover,to move, to persuade, to excite
+mudarse,to change one's clothes, to change one's place of residence, to move
+nacer,to be born
+nadar,to swim
+navegar,to navigate, to sail
+necesitar,to need
+negar,to deny
+nevar,to snow
+obedecer,to obey
+observar,to observe
+obtener,to obtain, to get
+ocultarse,to hide oneself
+ocupar,to occupy
+ocurrir,to occur, to happen
+ofrecer,to offer
+oír,to hear
+oler,to smell, to scent
+olvidar,to forget
+oponer,to oppose
+ordenar,to order, to command, to put in order, to arrange
+organizar,to organize, to arrange, to set up
+osar,to dare, to venture
+pagar,to pay
+parar,to stop (someone or something)
+pararse,to stop (oneself)
+parecer,to seem, to appear
+parecerse,to resemble each other, to look alike
+partir,to leave, to depart, to divide, to split
+pasar,to pass (by), to happen, to spend (time)
+pasearse,to take a walk, to parade
+pedir,to ask for, to request
+pegar,to beat, to hit, to slap, to stick, to glue, to paste
+peinarse,to comb one's hair
+pensar,to think
+percibir,to perceive
+perder,to lose
+perdonar,to pardon, to forgive, to excuse
+permitir,to permit, to admit, to allow, to grant
+pertenecer,to pertain, to appertain, to belong
+pintar,to paint
+pintarse,to make up (one's face), to tint, to color (one's hair, lips, etc.)
+pisar,to tread (on), to step on, to trample
+placer,to gratify, to humor, to please
+platicar,to chat, to talk over, to discuss
+poder,to be able, can
+poner,to put, to place
+ponerse,to put on (clothing), to become, to set (of sun)
+poseer,to possess, to own
+practicar,to practice
+predecir,to predict, to forecast, to foretell
+predicar,to preach
+preferir,to prefer
+preguntar,to ask, to inquire, to question
+preocuparse,to be concerned, to worry, to be worried
+preparar,to prepare
+prepararse,to be prepared, to get ready, to prepare oneself
+presentar,to present, to display, to show, to introduce
+prestar,to lend
+principiar,to begin
+probar,to test, to prove, to try, to try on
+probarse,to try on (clothes)
+proclamar,to proclaim, to promulgate
+producir,to produce, to cause
+prohibir,to prohibit, to forbid
+pronunciar,to pronounce
+proteger,to protect
+pulir,to polish
+quedarse,to remain, to stay
+quejarse,to complain, to grumble
+quemar,to burn, to fire
+querer,to want, to wish
+quitarse,to take off (clothing), to remove oneself, to withdraw
+raer,to scrape, to rub off, to erase, to wipe out
+realizar,to realize, to carry out, to fulfill
+recibir,to receive, to get
+recoger,to pick (up), to gather, to harvest
+recomendar,to recommend, to commend, to advise
+reconocer,to recognize, to acknowledge, to be grateful for
+recordar,to remember, to recall, to remind
+referir,to refer, to relate
+regalar,to give as a present, to make a present of, to give as a gift
+regar,to water, to irrigate, to sprinkle
+regresar,to return, to go back, to regress
+reír,to laugh
+reírse,to laugh
+rellenar,to refill, to fill again, to stuff
+remitir,to remit, to forward, to transmit
+reparar,to mend, to repair, to notice, to observe
+repartir,to distribute, to deal cards
+repetir,to repeat
+resolver,to resolve, to solve (a problem)
+responder,to answer, to reply, to respond
+retirar,to retire, to withdraw
+retrasar,to delay, to retard
+reunirse,to assemble, to get together, to meet, to gather
+revocar,to revoke, to repeal
+revolver,to revolve, to turn around, to turn over, to turn upside down
+robar,to rob, to steal
+rogar,to supplicate, to ask, to ask for, to request, to beg, to pray
+romper,to break, to shatter, to tear
+saber,to know, to know how
+sacar,to take out, to get
+sacudir,to shake, to jerk, to jolt
+salir,to go out, to leave
+saltar,to jump, to leap, to hop, to spring
+saludar,to greet, to salute
+satisfacer,to satisfy
+secar,to dry, to wipe dry
+secarse,to dry oneself
+seguir,to follow, to pursue, to continue
+señalar,to signal, to indicate, to point out, to show
+sentarse,to sit down
+sentir,to feel sorry, to regret, to feel
+sentirse,to feel (well, ill)
+separar,to separate, to detach, to sort, to set apart
+ser,to be
+servir,to serve
+socorrer,to help, to aid, to assist, to succor
+sofocar,to choke, to smother, to suffocate, to stifle
+soler,to be accustomed to, to be in the habit of, to have the custom of
+sollozar,to sob, to whimper
+someter,to subdue, to subject, to surrender, to submit
+sonar,to ring, to echo, to resound, to sound
+soñar,to dream
+sonreír,to smile
+soplar,to blow, to blow out
+sorprender,to surprise, to astonish
+sospechar,to suspect
+sostener,to sustain, to support, to maintain, to uphold
+subir,to go up, to come up, to climb, to rise, to mount, to get on (a train, bus, etc.)
+subrayar,to underline, to underscore, to emphasize
+subscribir,to subscribe, to agree with, to sign
+suceder,to happen
+sufrir,to suffer, to endure, to bear up, to undergo
+sugerir,to hint, to insinuate, to suggest
+sumergir,to submerge, to plunge, to immerse, to sink
+suponer,to suppose, to assume
+suprimir,to suppress, to abolish, to cancel (in mathematics), to eliminate
+surgir,to surge, to appear, to spout, to spurt
+suspirar,to sigh
+tañer,to pluck, to play (a stringed instrument)
+telefonear,to telephone
+telegrafiar,to telegraph, to cable
+temblar,to tremble, to quake, to quiver, to shake, to shiver
+temer,to fear, to dread
+tender,to extend, to offer, to stretch, to spread out, to hang out (washing)
+tener,to have, to hold
+tentar,to examine by touch, to feel with the fingers, to attempt, to try
+terminar,to end, to terminate, to finish
+tirar,to pull, to draw, to pitch (a ball), to shoot (a gun), to throw, to fling
+tocar,to play (a musical instrument), to touch
+tomar,to take, to have (something to eat or to drink)
+tostar,to toast, to tan, to roast (coffee)
+trabajar,to work, to labor
+traducir,to translate
+traer,to bring
+tratar,to try, to treat a subject
+tropezar,to stumble, to blunder
+unir,to connect, to unite, to join, to bind, to attach
+usar,to use, to employ, to wear
+utilizar,to utilize
+vaciar,to empty
+valer,to be worth
+velar,to stay awake, to guard, to watch over
+vencer,to conquer, to overcome, to defeat
+vender,to sell
+venir,to come
+ver,to see
+vestirse,to dress oneself, to get dressed
+viajar,to travel
+vigilar,to watch (over), to keep guard, to look out for
+visitar,to visit
+vivir,to live
+volar,to fly
+volver,to return, to go back
+votar,to vote, to vow
+yacer,to lie down, to be lying down, to lie in a grave
+zumbar,to buzz, to hum, to flutter around
+zurcir,to darn, to mend
