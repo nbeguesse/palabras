@@ -3,9 +3,9 @@ class Verb < ActiveRecord::Base
   belongs_to :infinitive
   validates_presence_of :infinitive
   validates_presence_of :word
-  before_save :remove_accents
   before_save :split_comma
   before_save :set_previous_word
+  before_save :remove_accents
   attr_accessor :perfect
 
   enum pronoun: [:no_pronoun, :yo, :tu, :el, :nosotros, :vosotros, :ellos]
