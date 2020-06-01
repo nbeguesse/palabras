@@ -112,7 +112,10 @@
        matches = Verb.matches_for(word)
        if matches.any?
           matches.pluck(:infinitive_id).uniq.each do |inf_id| #e.g. create a double-row for 'fuera' 
-            matches2 = matches.where(:infinitive_id=>inf_id) #e.g. separate both meanings of 'sé'
+            matches2 = matches.where(:infinitive_id=>inf_id).to_a #e.g. separate both meanings of 'sé'
+            matches2.reject!{|v| v.previous_word_is && previous_word != v.previous_word_is}
+            matches2.reject!{|v| v.previous_word_is_not && previous_word == v.previous_word_is_not}
+            next if matches2.empty?
             verb = matches2.first
             inf = Infinitive.find(inf_id)
             pronouns = matches.pluck(:pronoun).uniq.compact
@@ -124,6 +127,7 @@
               end
             end
             %>
+
           <tr class="<%=row_class%>">
             <td> 
               <%if !verb.is_infinitive && !verb.is_participle%>
@@ -144,11 +148,8 @@
               <%matches2.each do |v|%>
                 <%v = perfect if perfect%>
                 <div>
-                  <%next if v.previous_word_is && previous_word != v.previous_word_is%>
-                  <%next if v.previous_word_is_not && previous_word == v.previous_word_is_not%>
-                  <%next if previous_v && v.same_as?(previous_v)%>
 
-                  
+                  <%next if previous_v && v.same_as?(previous_v)%>
                   <!-- mood -->
                   <%if v.subjunctive?%>
                     <button type="button" class="btn btn-danger disabled"><%=Rails.env.development? ? "Imaginary" : "Subjunctive"%></button><!-- i.e. light orange -->

@@ -41,6 +41,7 @@ class Verb < ActiveRecord::Base
 
   def self.matches_for word
     return [] if word == "para"
+    return [] if word == "una"
     #i.e. first search for an exact match
     matches = Verb.where(:word=>word)
     return matches if matches.any?
